@@ -1,0 +1,24 @@
+
+<html>
+<body>
+
+<h1>
+Enhancing Functional Connectivity with Dictionary Learning for Brain Fingerprints
+</h1>
+
+<P>
+The human brain consumes about 20% of the body’s total energy, even when not engaged in any specific cognitive tasks. Researchers are particularly interested in understanding the brain's activities during rest. Resting-state functional Magnetic Resonance Imaging (rs-fMRI) is used to study these activities. In an rs-fMRI scan, a subject lies in the MRI scanner and is asked to do nothing in particular, while the brain activity is recorded. This results in four-dimensional data, representing a "movie" of the brain with three spatial dimensions and one temporal dimension. Interestingly, regions of the brain that are physically distant from each other can show similar activity patterns, a phenomenon known as functional connectivity (FC). When several such regions display similar brain activity, they form a functional network (FN). Notable FNs identified in resting-state fMRI include the Visual Network, the Motor Network, and the Default Mode Network. By analyzing the FC in resting-state fMRI, researchers can investigate what the brain is doing during periods of rest, without performing any cognitive task. A fascinating aspect of brain activity is that the FC patterns are unique to each individual, much like fingerprints. These "brain fingerprints" can be used to identify individuals, predict behaviors, and even guide personalized treatment approaches for clinical conditions such as depression or schizophrenia. However, to improve the accuracy of these predictions, it is crucial to enhance the subject-specific features of the FC data.
+
+<P>
+In this study, we aim to enhance the individual-specific characteristics of FC using dictionary learning (DL) methods. DL techniques learn a set of basis vectors from training data, which can then be used to reconstruct new test data. In this case, the FC data from a group of subjects is used to train the DL algorithms, which then generate basis vectors that can extract subject-specific FC features from individual scans. To measure the effectiveness of these algorithms in capturing individual differences, we use metrics such as Differential Identifiability (I_diff) and Overlap. These metrics are based on the idea that FC patterns from scans of the same subject should be more similar to each other than those from different subjects. We compare four different DL algorithms—Principal Component Analysis (PCA), Robust PCA, K-Singular Value Decomposition (K-SVD), and Common Orthogonal Basis Extraction (COBE)—to assess their ability to extract subject-specific FC. Our results show that the COBE algorithm outperforms the other methods in this regard. Additionally, we examine how different FNs contribute to the uniqueness of the brain’s functional connectivity patterns. We find that the Default Mode Network, Front-Parietal Network, and Dorsal Attention Network contain the most individual-specific information, making them particularly useful for identifying a person based on their FC.
+
+<P>
+<a href="https://ap20.github.io/nnj/NL/edutechrev/EFCwithDLforBF.pdf">
+https://ap20.github.io/nnj/NL/edutechrev/EFCwithDLforBF.pdf</a>
+
+<P>
+More details on this study can be found in this paper https://onlinelibrary.wiley.com/doi/10.1002/hbm.26289. 
+Contact Pratik Jain pj44@njit.edu
+
+</body>
+</html>
